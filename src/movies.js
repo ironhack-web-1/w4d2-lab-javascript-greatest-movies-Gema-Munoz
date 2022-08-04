@@ -17,9 +17,9 @@ function howManyMovies(moviesArray) {
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(moviesArray) {
-    let sum = moviesArray.reduce( (sumMovies, movie ) => sumMovies + movie.score) 
+    let sum = moviesArray.reduce( (sumMovies, movie ) => sumMovies + movie.score, 0) 
     let average = sum / moviesArray.length
-    return average.toFixed(2)
+    return average
     
 }
 
