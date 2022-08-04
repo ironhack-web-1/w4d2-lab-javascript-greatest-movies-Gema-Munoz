@@ -17,9 +17,10 @@ function howManyMovies(moviesArray) {
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(moviesArray) {
-    //primero tenemos que sumar todos los valores con reduce
-    //el valor retornado por reduce (la suma) la dividimos entre el numero totoal de peliculas (length) para obtener la media
-    // el ejercicio nos pide que retornemos el valor con dos decimales. Hay una funcion que hace eso.
+    let sum = moviesArray.reduce( (sumMovies, movie ) => sumMovies + movie.score) 
+    let average = sum / moviesArray.length
+    return average.toFixed(2)
+    
 }
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
